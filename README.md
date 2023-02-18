@@ -37,4 +37,3 @@
 <p>If you would like to contribute to this project, feel free to submit a pull request. Before submitting a pull request, please make sure to run the tests and the linter:</p>
 <pre>npm run test
 npm run lint</pre>
-<h2>License</h2>
