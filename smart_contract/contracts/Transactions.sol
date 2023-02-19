@@ -5,14 +5,14 @@ pragma solidity ^0.8.0;
 import "hardhat/console.sol";
 
 contract Transactions {
-    uint256 transactionCount;
+    uint256 public transactionCount;
 
-    event Transfer(address from, address receiver, uint amount, string message, uint256 timestamp, string keyword);
+    event Transfer(address indexed from, address indexed receiver, uint256 amount, string message, uint256 timestamp, string keyword);
   
     struct TransferStruct {
         address sender;
         address receiver;
-        uint amount;
+        uint256 amount;
         string message;
         uint256 timestamp;
         string keyword;
@@ -20,7 +20,7 @@ contract Transactions {
 
     TransferStruct[] transactions;
 
-    function addToBlockchain(address payable receiver, uint amount, string memory message, string memory keyword) public {
+    function addToBlockchain(address payable receiver, uint256 amount, string memory message, string memory keyword) public {
         transactionCount += 1;
         transactions.push(TransferStruct(msg.sender, receiver, amount, message, block.timestamp, keyword));
 
