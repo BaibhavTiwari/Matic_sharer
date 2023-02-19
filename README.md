@@ -30,9 +30,9 @@
   <li>Click the "View on Etherscan" button to view the transaction on Etherscan.</li>
 </ol>
 <h2>Smart Contract</h2>
-<p>The smart contract used in this app was built using Solidity and deployed on the Rinkeby test network. The contract implements the ERC20 token standard and allows users to transfer MATIC tokens between two addresses.</p>
+<p>The smart contract used in this app was built using Solidity and deployed on the Goerli test network. The contract implements the ERC20 token standard and allows users to transfer MATIC tokens between two addresses.</p>
 <p>The smart contract code can be found in the <code>contracts</code> directory. To deploy the contract on the Rinkeby test network, you will need to have a private key with some test Ether on the Rinkeby network. You can use Hardhat to deploy the contract by running the following command:</p>
-<pre>npx hardhat run scripts/deploy.js --network rinkeby</pre>
+<pre>npx hardhat run scripts/deploy.js --network goerli</pre>
 <h2>Contributing</h2>
 <p>If you would like to contribute to this project, feel free to submit a pull request. Before submitting a pull request, please make sure to run the tests and the linter:</p>
 <pre>npm run test
